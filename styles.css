@@ -15,6 +15,14 @@
 .intro-lines p{margin:6px 0}
 .project-card{height:260px;border:4px solid #111}
 
+/* Bunny styles */
+.bunny-container{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:10px}
+.bunny{max-width:320px;width:100%;height:auto}
+.hint{margin:0;color:#444}
+.nose{cursor:pointer;transition:transform 120ms ease}
+.nose:focus{outline:3px solid rgba(100,150,240,0.25);outline-offset:4px}
+.nose.tapped{transform:scale(0.85) translateY(2px)}
+
 /* Small screens: collapse sidebar above content */
 @media (max-width:900px){
   .app{grid-template-columns:1fr;grid-template-rows:auto auto 1fr;grid-template-areas:"header" "sidebar" "main"}
