@@ -23,6 +23,18 @@
 .nose:focus{outline:3px solid rgba(100,150,240,0.25);outline-offset:4px}
 .nose.tapped{transform:scale(0.85) translateY(2px)}
 
+.bunny-section{display:flex;flex-direction:column;gap:12px;padding-top:6px}
+.section-title{margin:0;font-size:18px;color:#111}
+
+/* Image-based bunny wrapper and hotspot */
+.bunny-img-wrap{position:relative;display:inline-block}
+.bunny-img-wrap #bunny-img{display:block;max-width:360px;width:100%;height:auto}
+
+/* Nose hotspot: positioned with percentages to match the image. Tweak left/top to align with your drawing. */
+#bunny-nose{position:absolute;left:50%;top:56%;transform:translate(-50%,-50%);width:28px;height:28px;border-radius:50%;background:transparent;border:0;padding:0}
+#bunny-nose:focus{outline:3px solid rgba(100,150,240,0.25);outline-offset:4px}
+#bunny-nose.tapped{transform:translate(-50%,-48%) scale(0.85)}
+
 /* Small screens: collapse sidebar above content */
 @media (max-width:900px){
   .app{grid-template-columns:1fr;grid-template-rows:auto auto 1fr;grid-template-areas:"header" "sidebar" "main"}
